@@ -1,0 +1,92 @@
+body{
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+}
+
+img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+img:hover{
+    transform: scale(1.059);
+    
+}
+button:hover{
+    transform: scale(1.04);
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid black 1px;
+    padding: 10px;
+}
+.precio{
+    color: red;
+    font-weight: bold;
+}
+
+button{
+    background-color: #007BBF;
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+/*?ANIMACIONES*/
+section{
+    animation-name: deslizar;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes deslizar {
+            from{
+                translate: 0px 500px;
+                scale: 100%;
+            }
+            to{
+                translate: 0px 0px ;
+                scale: 100%;
+            }
+        }
+h1{
+    animation-name: deslizar2;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes deslizar2 {
+            from{
+                translate: 0px -200px;
+                scale: 100%;
+            }
+            to{
+                translate: 0px 0px ;
+                scale: 100%;
+            }
+        }
+/*@keyframes deslizar {
+            from{
+                translate: 600px 0px;
+                scale: 200%;
+            }
+            to{
+                translate: 100px 200px ;
+                scale: 100%;
+            }
+        }
+            animation-name: cambiaColor, deslizar;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;*/
