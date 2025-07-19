@@ -45,3 +45,9 @@ button {
     }
     
 }
+@media (min-width: 1024px) {
+    section{
+        grid-template-columns:repeat(4,1fr);
+    }
+    
+}
